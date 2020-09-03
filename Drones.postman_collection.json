@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "74eb7fcb-345f-4274-ba78-3ad42c3ba2b4",
+		"name": "Drones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/drones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Paginate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api2/drones/paginate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api2",
+						"drones",
+						"paginate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sort",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api2/drones/sort",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api2",
+						"drones",
+						"sort"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/drones/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drones",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \r\n        \"image\": \"https://robohash.org/verovoluptatequia.jpg\",\r\n        \"name\": \"priscila\",\r\n        \"address\": \"888 Springview Junction\",\r\n        \"battery\": 80,\r\n        \"max_speed\": 3.7,\r\n        \"average_speed\": 11.6,\r\n        \"status\": \"success\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/drones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \r\n        \"image\": \"https://robohash.org/verovoluptatequia.jpg\",\r\n        \"name\": \"valdir\",\r\n        \"address\": \"888 Springview Junction\",\r\n        \"battery\": 80,\r\n        \"max_speed\": 3.7,\r\n        \"average_speed\": 11.6,\r\n        \"status\": \"fail\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/drones/put/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drones",
+						"put",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \r\n        \"name\": \"valdir\",\r\n        \"status\": \"success\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api2/drones/filter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api2",
+						"drones",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post Copy 2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/drones/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"drones",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
