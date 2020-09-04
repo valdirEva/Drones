@@ -30,7 +30,7 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 
 Eloquent
 
-##Aqruivo .env
+## Aqruivo .env
 Utilizar o arquivo .env.exemple, retirar .exemple do nome do arquivo, dentro do arquivo alterar o campo DB_DATABASE=drone, colocar usuário e senha do MySQL.
 ## 1º
 Abrir o CMD e excutar :php artisan migrate
